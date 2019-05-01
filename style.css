@@ -33,14 +33,14 @@ body {
   background-color: #392d2d;
 }
 .backgroundimg {
-  width: 1500px;
+  width: 1440px;
   height: 700px;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
 }
 .bar {
-  padding: 20px 0px;
+  padding: 50px 0px;
 }
 .profile {
   width: 100%;
@@ -63,8 +63,8 @@ body {
 }
 
 .bartable {
-  background-color: rgba(234, 234, 234, 0.35);
-  margin-top: 5vh;
+  background-color: black;
+  margin-top: -1vh;
   width: 100%;
   text-align: center;
   font-size: 30px;
