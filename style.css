@@ -1,47 +1,141 @@
-.profiletext {
-  color: white;
-  text-align: center;
-  border-collapse: collapse;
-}
+@font-face {
+  font-family: "Futura";
+  src: url("Futura.ttc");
 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroy";
+  src: url("gilroy-light.otf");
+
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroybold";
+  src: url("gilroy-extrabold.otf");
+
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Geosanslight";
+  src: url("GeosansLight.ttf");
+
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  margin-top: 50px;
-  background-color: #005e88;
-  font-family: Rockwell;
+  margin: 0;
+  padding: 0;
+  font-family: futura;
+  background-color: #392d2d;
 }
-.profile {
-  height: 80vh;
-}
-
-img.profile-img {
-  margin-top: 10vh;
-  width: 300px;
-  height: auto;
-  display: block;
+.backgroundimg {
+  width: 1500px;
+  height: 700px;
+  object-fit: cover;
   margin-left: auto;
   margin-right: auto;
+}
+.bar {
+  padding: 20px 0px;
+}
+.profile {
+  width: 100%;
+  margin-top: 50vh;
+  text-align: center;
+  position: absolute;
+  display: table;
+  color: White;
+  font-family: futura;
+  font-size: 30px;
+}
+.profilepic {
+  width: 13%;
+  height: auto;
+  margin-top: -25vh;
+  left: 50%;
+  margin-left: -93.5px;
+  position: absolute;
   border-radius: 50%;
 }
 
-td {
-  padding: 0px 78px;
-
+.bartable {
+  background-color: rgba(234, 234, 234, 0.35);
+  margin-top: 5vh;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
   color: white;
+  position: sticky;
+  top: 0px;
+}
+.title {
+  padding-top: 80px;
+  margin-top: -50px;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  font-family: futura;
+}
+
+.work {
+  margin-left: 120vh;
+  color: white;
+  font-size: 30px;
+}
+.clubs {
+  margin-left: 120vh;
+  color: white;
+  font-size: 30px;
+  margin-top: 50vh;
+}
+.boxtable {
+  border-spacing: 10vh;
+  border-collapse: separate;
+}
+.box {
+  background-color: rgba(20, 20, 20, 0.35);
+  font-family: Geosanslight;
+  color: rgba(230, 230, 230, 0.95);
+  padding: 12px 12px;
+  vertical-align: top;
+}
+.subtitle {
+  font-family: futura;
+  margin-left: 30vh;
+  font-size: 30px;
+}
+.navicon {
+  width: 5%;
+  height: auto;
+  vertical-align: middle;
+}
+p {
+  font-family: Geosanslight;
+  color: rgba(230, 230, 230, 0.95);
   text-align: center;
 }
-.left {
-  text-align: left;
+a:link {
+  text-decoration: none;
+  color: white;
 }
-.borders {
-  border-collapse: collapse;
-  border: 2px solid #005e88;
+a:visited {
+  text-decoration: none;
+  color: white;
 }
-.darkcyan {
-  background-color: #073043;
+a:hover {
+  text-decoration: none;
+  color: white;
 }
-.lightcyan {
-  background-color: #87c6e3;
+a:focus {
+  text-decoration: none;
+  color: white;
 }
-footer {
+a:hover,
+a:active {
+  text-decoration: none;
   color: white;
 }

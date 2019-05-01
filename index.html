@@ -3,71 +3,125 @@
   <head>
     <title>Timothy Kamoua</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on("click", function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top
+              },
+              400,
+              function() {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
   </head>
   <body>
-    <header>
-    <div class="bar">
-
-      <table class="lightcyan borders">
-        <tr>
-          <td class="bartext borders" id="leftmost">
-            <h1>Home</h1>
-          </td>
-          <td class="bartext borders" >
-            <a href="#aboutme"><h1>About Me</h1></a>
-          </td>
-          <td class="bartext borders">
-            <h1>Resume</h1>
-          </td>
-          <td class="bartext borders">
-            <h1>LinkedIn</h1>
-          </td>
-          <td class="bartext borders">
-            <a href=https://github.com/tkamoua target="_blank"><h1>GitHub</h1></a>
-          </td>
+    <div>
+        
+    </div>
+    <div class="profile">
+        <p ></p>
+        <a href="https://na.op.gg/summoner/userName=novum" target="_blank"><img class="profilepic" src="rengar.jpg"></a>
+            Timothy Kamoua
+            <br>
+            tkamoua@umich.edu
+          </p>
+    </div>
     
+    <div><img id="home" class="backgroundimg" src="Yosemite.jpg" /></div>
+
+      <table class="bartable">
+        <tr class="bar">
+          <td class="bar"><a href="#home">Home</a></td>
+          <td class="bar"><a href="#aboutme">About Me</a></td>
+          <td clsss="bar">Resume</td>
+          <td class="bar"><a href="https://github.com/tkamoua" target="_blank">Github</a></td>
+          <td class="bar"><a href="https://www.linkedin.com/in/timothy-kamoua-270b06182/" target="_blank">LinkedIn</a></td>
+          <td class="bar"><a href=#contact>Contact Me</a></td>
         </tr>
       </table>
-    </div> 
-  </header>
-    
-
-    <div class="profile">
-      <!-- Profile Image -->
-      <img src="khazixprofilepic.png" class="profile-img"> 
-      <h3 class="profiletext">Timothy Kamoua</h3>
-      <h3 class="profiletext">tkamoua@umich.edu</h3>
     </div>
-    <br>
-    <br>
-    <br>
-    <div class="Left Text section">
+    <div>
+      <p id="aboutme" class="title">
+        About Me
+      </p>
+      <table class="boxtable">
+        <tr>
+          <td class="box" rowspan="2">
+            Hi, my name is Timothy Kamoua. I am a freshman studying computer
+            science at the University of Michigan College of Engineering. My
+            interests include programming, game design, software development,
+            and esports.
+          </td>
+          <td class="box">
+            <span class="subtitle">Work Experience</span>
+            <br />
+            <br />
+            The next movement in paragraph development is an explanation of each
+            example and its relevance to the topic sentence and rationale that
+            were stated at the beginning of the paragraph. This explanation
+            shows readers why you chose to use this/or these particular examples
+            as evidence to support the major claim, or focus, in your paragraph.
+          </td>
+        </tr>
+        <tr>
+          <td class="box">
+            <span class="subtitle">Interests and Clubs</span>
+            <br />
+            <br />
+            <ul>
+              <li>
+                University of Michigan Solar Car Software Developer and
+                Strategist
+              </li>
+              <br />
+              <li>
+                University of Michigan League of Legends Team Backup Jungler
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+
+      <p id="contact" class="title">
+        <br>
+        <br>
+
+        Contact Me
+      </p>
       <p>
-        <table class="darkcyan borders">
-          <tr>
-            <section></section>
-            <td class="borders"><h2 id="aboutme">About Me</h2></td>
-            <td class="borders"> <p class="left">
-                My name is Timothy Kamoua. I am a freshman studying computer science at the University of Michigan College of Engineering.
-                Iron man black widow captain america die, rat saves universe, time travel 
-              </p></td>
-          </tr>
-          <tr>
-            <td class="borders"><h2>Contact Me</h2></td>
-            <td class="left borders">
-                My name is Timothy Kamoua.
-                <br>
-                <a href="mailto:tkamoua@umich.edu">Send me an email</a>
-              </td>
-          </tr>
-        </table>
-       
+        631-885-1769 &nbsp;
+
+        <a href="mailto: tkamoua@umich.edu"
+          >tkamoua@umich.edu <img class="navicon" src="emailimg.png" />
+        </a>
+        &nbsp;
+
+        <img class="navicon" src="instagramsymbol.png" /> &nbsp;
+
+        <img class="navicon" src="twittersymbol.png" /> &nbsp;
       </p>
     </div>
-    
-
   </body>
   <footer>
-
+    &copy Timothy Kamoua 2019
   </footer>
 </html>
