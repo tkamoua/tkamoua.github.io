@@ -1,7 +1,47 @@
-.dot {
-  height: 25px;
-  width: 25px;
-  background-color: white;
+.profiletext {
+  color: white;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+body {
+  margin-top: 50px;
+  background-color: #005e88;
+  font-family: Rockwell;
+}
+.profile {
+  height: 80vh;
+}
+
+img.profile-img {
+  margin-top: 10vh;
+  width: 300px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 50%;
-  display: inline-block;
+}
+
+td {
+  padding: 0px 78px;
+
+  color: white;
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.borders {
+  border-collapse: collapse;
+  border: 2px solid #005e88;
+}
+.darkcyan {
+  background-color: #073043;
+}
+.lightcyan {
+  background-color: #87c6e3;
+}
+footer {
+  color: white;
 }
