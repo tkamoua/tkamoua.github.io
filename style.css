@@ -29,19 +29,39 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: futura;
+  font: 15px/1.5 Futura;
   background-color: #392d2d;
 }
-.backgroundimg {
-  width: 1440px;
-  height: 700px;
-  object-fit: cover;
-  margin-left: auto;
-  margin-right: auto;
+.container{
+  width:80%; 
+  margin:auto; 
+  overflow:hidden;
 }
-.bar {
-  padding: 50px 0px;
+
+ #showcase{
+ 
+  min-height: 780px;
+  background: url('Yosemite.jpg')  no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+ 
 }
+
+
+#showcase p{
+  color:black;
+  font-size: 50px;
+  font-family: gilroybold;
+  margin-top: 150px;
+
+}
+header a:hover{
+  color:#505050;
+  font-weight:bold; 
+}
+
 .profile {
   width: 100%;
   margin-top: 50vh;
@@ -61,16 +81,18 @@ body {
   position: absolute;
   border-radius: 50%;
 }
-
-.bartable {
+.bar {
+  padding: 50px 30px;
+}
+#bartable {
   background-color: black;
-  margin-top: -1vh;
-  width: 100%;
+  margin:auto;
+  width:100%;
   text-align: center;
   font-size: 30px;
   color: white;
   position: sticky;
-  top: 0px;
+  top: 0;
 }
 .title {
   padding-top: 140px;
@@ -93,10 +115,12 @@ body {
   margin-top: 50vh;
 }
 .boxtable {
+  overflow: visible;
   border-spacing: 10vh;
   border-collapse: separate;
 }
 .box {
+  overflow-x:auto;
   background-color: rgba(20, 20, 20, 0.35);
   font-family: Geosanslight;
   color: rgba(230, 230, 230, 0.95);
@@ -105,7 +129,7 @@ body {
 }
 .subtitle {
   font-family: futura;
-  margin-left: 30vh;
+  margin: auto;
   font-size: 30px;
 }
 .navicon {
@@ -138,4 +162,44 @@ a:hover,
 a:active {
   text-decoration: none;
   color: white;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+
 }
