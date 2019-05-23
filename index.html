@@ -1,144 +1,128 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width">
-    <meta name = "description" content="My website">
-    <meta name ="keywords" content = "web design, league of legends, University of Michigan, Computer Science">
-    <title>Timothy Kamoua</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        // Add smooth scrolling to all links
-        $("a").on("click", function(event) {
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $("html, body").animate(
-              {
-                scrollTop: $(hash).offset().top
-              },
-              400,
-              function() {
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              }
-            );
-          } // End if
-        });
-      });
-    </script>
-  </head>
-  <body>
-    <div>
-        
-    </div>
-
-    </div>
-    <section id="showcase">
-        <div class = "container">  
-        <p id = "home">
-          Timothy Kamoua
-          <br>
-          tkamoua@umich.edu
-        </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Squeeze</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="home">
+        <div class = "menu">
+            <span class = "bar"></span>
+        </div>
+        <nav class = "nav">
+            <div class = "overlay">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#work">Work Experience</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class = "main-text">
+            <h1>Tim Kamoua</h1>
+            <h2>tkamoua@umich.edu</h2>
+            <a href="#aboutme" class = "btn main-btn">Explore</a>
+        </div>
+    </header>
+    <section class = "about-me" id="aboutme">
+        <div class = "container">
+           <div class="center add-padding-right">
+            <h2 class = "custom-font-secondary">About me</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel interdum dui. Pellentesque habitant 
+                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin placerat nunc justo, 
+                sed convallis libero sagittis et. Aliquam venenatis ex vel nunc blandit, eget cursus tellus feugiat. 
+                Nullam eget elit consectetur, lobortis eros ut, tincidunt elit. Aliquam ut elit quis risus sodales molestie. 
+                Donec in placerat magna. Donec arcu purus, gravida id feugiat dapibus, lacinia a ligula. Nam eu turpis in velit volutpat consequat. 
+                Fusce rhoncus massa et gravida congue. Nulla dictum lacus sit amet dolor pulvinar cursus. Ut ut libero hendrerit, tempor orci et, 
+                porttitor mi. Fusce massa nunc, efficitur in molestie ac, gravida a neque. Sed mattis nec elit nec dignissim.
+            </p>
+            <a href="#" class="btn btn-info">Learn More</a>
+        </div>
+            <div class = "store add-flex"></div>
         </div>
     </section>
-    
 
+    <section class="Front-end between-sec">
+ 
+            <h1 class = "custom-font">Frontend</h1>
+            <h2 class = "custom-font-secondary between-sec-color">Development</h2>
+ 
+    </section>
 
-      <table id="bartable">
-          <tr class="bar">
-            <td class="bar"><a href="#home">Home</a></td>
-            <td class="bar"><a href="#aboutme">About Me</a></td>
-            <td class="bar">Resume</td>
-            <td class="bar"><a href="https://github.com/tkamoua" target="_blank">Github</a></td>
-            <td class="bar"><a href="https://www.linkedin.com/in/timothy-kamoua-270b06182/" target="_blank">LinkedIn</a></td>
-            <td class="bar"><a href=#contact>Contact Me</a></td>
-          </tr>
-        </table>
-
-    
-
-
-      
-<section id="descriptions">
-    <div class="container" >
-        <br>
-        <p id="aboutme" class="title">
-          About Me
-        </p>
-        <table class="boxtable">
-          <div >
-          <tr>
-            <td class="box" rowspan="2">
-              Hi, my name is Timothy Kamoua. I am a freshman studying computer
-              science at the University of Michigan College of Engineering. My
-              interests include programming, game design, software development,
-              and esports.
-            </td>
-            <td class="box">
-              <span class="subtitle">Work Experience</span>
-              <br />
-              <br />
-              The next movement in paragraph development is an explanation of each
-              example and its relevance to the topic sentence and rationale that
-              were stated at the beginning of the paragraph. This explanation
-              shows readers why you chose to use this/or these particular examples
-              as evidence to support the major claim, or focus, in your paragraph.
-            </td>
-          </tr>
-          <tr>
-            <td class="box">
-              <span class="subtitle">Interests and Clubs</span>
-              <br />
-              <br />
-              <ul>
-                <li>
-                  University of Michigan Solar Car Software Developer and
-                  Strategist
-                </li>
-                <br />
-                <li>
-                  University of Michigan League of Legends Team Backup Jungler
-                </li>
-              </ul>
-            </td>
-          </tr>
+    <section class = "work-exp" id="work">
+        <div class = "container">
+            <div class="center">
+            <h2 class = "custom-font-secondary">Work Experience</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel interdum dui. Pellentesque habitant 
+                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin placerat nunc justo, 
+                sed convallis libero sagittis et. Aliquam venenatis ex vel nunc blandit, eget cursus tellus feugiat. 
+                Nullam eget elit consectetur, lobortis eros ut, tincidunt elit. Aliquam ut elit quis risus sodales molestie. 
+                Donec in placerat magna. Donec arcu purus, gravida id feugiat dapibus, lacinia a ligula. Nam eu turpis in velit volutpat consequat. 
+                Fusce rhoncus massa et gravida congue. Nulla dictum lacus sit amet dolor pulvinar cursus. Ut ut libero hendrerit, tempor orci et, 
+                porttitor mi. Fusce massa nunc, efficitur in molestie ac, gravida a neque. Sed mattis nec elit nec dignissim.
+            </p>
+            <a href="#" class="btn btn-info">Learn More</a>
+        </div>  
         </div>
-        </table>
-      </div>
-  
-</section>
-    
-      <p id="contact" class="title">
-        <br>
-        <br>
+    </section>
 
-        Contact Me
-      </p>
-      <p>
-        631-885-1769 &nbsp;
+    <section class="Back-end between-sec">
+      >
+            <h1 class = "custom-font">Backend</h1>
+            <h2 class = "custom-font-secondary between-sec-color">Development</h2>
+     
+    </section>
 
-        <a href="mailto: tkamoua@umich.edu"
-          >tkamoua@umich.edu <img class="navicon" src="emailimg.png" />
-        </a>
-        &nbsp;
+    <section class = "education" id="edu">
+        <div class = "container">
+            <h1 class = "custom-font-secondary">Education</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel interdum dui. Pellentesque habitant 
+                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin placerat nunc justo, 
+                sed convallis libero sagittis et. Aliquam venenatis ex vel nunc blandit, eget cursus tellus feugiat. 
+                Nullam eget elit consectetur, lobortis eros ut, tincidunt elit. Aliquam ut elit quis risus sodales molestie. 
+                Donec in placerat magna. Donec arcu purus, gravida id feugiat dapibus, lacinia a ligula. Nam eu turpis in velit volutpat consequat. 
+                Fusce rhoncus massa et gravida congue. Nulla dictum lacus sit amet dolor pulvinar cursus. Ut ut libero hendrerit, tempor orci et, 
+                porttitor mi. Fusce massa nunc, efficitur in molestie ac, gravida a neque. Sed mattis nec elit nec dignissim.
+            </p>
+        </div>
+    </section>
 
-        <img class="navicon" src="instagramsymbol.png" /> &nbsp;
 
-        <img class="navicon" src="twittersymbol.png" /> &nbsp;
-      </p>
+    <section class = "contact-me" id="contact">
+        <div class = "container">
+                <div class="center add-padding-right">
+            <h2 class = "custom-font-secondary">Contact Me</h2>
+        </div>
+        <div class="form-container add-flex">
+            <form action="">
+                <input type="text" class="input" placeholder="Full Name" name="name" required>
+                <input type="text" class="input" placeholder="Email" name="email" required>
+                <textarea name="message" class="text-area" cols="30" rows="10" required></textarea>
+                <input type="submit" class = "input btn btn-submit">
+                <p>631-885-1769</p>
+            </form>
+        </div>
+            
+        </div>
+    </section>
+<footer>
+    <div class="copyright">
+        <h4>Copyright Timothy Kamoua</h4>
     </div>
-  </body>
-  <footer>
-    &copy Timothy Kamoua 2019
-  </footer>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
 </html>
