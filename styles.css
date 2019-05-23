@@ -11,7 +11,12 @@ html{
     font-size: 62.5%;
     font-family: "Roboto", sans-serif; 
     scroll-behavior: smooth;
+    overflow-x: hidden; 
 }
+body{
+    overflow-x: hidden; 
+}
+
 
 :root{
     --main-font-color: #cfcec8;
@@ -79,6 +84,7 @@ a{
     width:90%;
     margin: 0 auto;
     text-align: center;
+
 }
 
 .between-sec{
