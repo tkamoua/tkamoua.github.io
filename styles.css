@@ -593,29 +593,53 @@ color:white;
 }
 .blue{
 
- color: rgb(4, 30, 102);
+color: rgb(4, 30, 102);
 }
+.grey{
+color: rgb(145, 144, 144);
+}
+
+.block{
+
+width: 100%;
+display:block;
+}
+
+.full-page{
+height:100%;
+width:100%;
+}
+.bottom{
+position: absolute;
+bottom:0
+}
+.middle{
+margin-top:auto;
+margin-bottom:auto;
+}
+
 .clip{
 
 background-color:rgb(4, 30, 102);
+color: rgb(145, 144, 144);
 }
 @media (max-width: 766px){
-  .mobile-none{
-    display:none;
-  }
-  .mobile-center{
-    text-align:center;
-  }
-  .row{
-    margin-right:0px;
-    margin-left:0px;
-  }
-  .bottom{
-    top:40rem;
-    bottom:0;
-    position:relative;
-  }
-  h2{
-    margin-top:2rem ;
-  }
+.mobile-none{
+  display:none;
+}
+.mobile-center{
+  text-align:center;
+}
+.row{
+  margin-right:0px;
+  margin-left:0px;
+}
+.bottom{
+  top:40rem;
+  bottom:0;
+  position:relative;
+}
+h2{
+  margin-top:2rem ;
+}
 }
