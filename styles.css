@@ -1,10 +1,3 @@
-@font-face {
-    font-family: 'VCROSDMono';
-    src: url('VCROSDMono.eot?#iefix') format('embedded-opentype'),  url('fonts/VCROSDMono.woff') format('woff'), url('fonts/VCROSDMono.ttf')  format('truetype'), url('fonts/VCROSDMono.svg#VCROSDMono') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
 html{
   font-size: 62.5%;
   height:100%;
@@ -201,7 +194,7 @@ background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     1335px 872px #fff, 1647px 1298px #fff, 1233px 1387px #fff, 698px 1036px #fff,
     659px 1860px #fff, 388px 1412px #fff, 1212px 458px #fff, 755px 1468px #fff,
     696px 1654px #fff, 1144px 60px #fff;
- 
+
 }
 #stars:after{
   content: '';
@@ -387,8 +380,8 @@ background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     1335px 872px #fff, 1647px 1298px #fff, 1233px 1387px #fff, 698px 1036px #fff,
     659px 1860px #fff, 388px 1412px #fff, 1212px 458px #fff, 755px 1468px #fff,
     696px 1654px #fff, 1144px 60px #fff;
- 
- 
+
+
 
 }
 #stars2{
@@ -593,34 +586,11 @@ a:hover{
 }
 .blue{
 
-color: rgb(4, 30, 102);
-}
-.grey{
-  color: rgb(145, 144, 144);
-}
-
-.block{
-  
-  width: 100%;
-  display:block;
-}
-
-.full-page{
-  height:100%;
-  width:100%;
-}
-.bottom{
-  position: absolute;
-  bottom:0
-}
-.middle{
-  margin-top:auto;
-  margin-bottom:auto;
-}
-
+@@ -53,7 +621,7 @@ color: rgb(4, 30, 102);
 .clip{
-  
+
   background-color:rgb(4, 30, 102);
+  color:white;
   color: rgb(145, 144, 144);
 }
 @media (max-width: 766px){
