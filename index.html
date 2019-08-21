@@ -1,128 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet" href="styles.css">
     <title>Timothy Kamoua</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header id="home">
-        <div class = "menu">
-            <span class = "bar"></span>
+  </head>
+  <body>
+      <div class="container">
+        <div class="row full-page ">
+          <div class="col-md-3 mobile-center ">
+                <div class="row ">
+                  <h1 class="display-1 block grey">Timothy</h1>
+                  <h1 class="display-1  block">Kamoua</h1><br>
+                </div>
+                  <div class="row bottom">
+                      <a class="block grey" href="mailto:tkamoua@umich.edu"><h2 class="block grey">tkamoua@umich.edu</h2></a>
+                      <a class = "block grey" href="https://github.com/tkamoua" target="_blank"><h2 class="block grey">GitHub</h2></a>
+                      <a class = "block grey" href="https://www.linkedin.com/in/timothy-kamoua-270b06182/" target="_blank"><h2 class="block grey">LinkedIn</h2></a>
+                      <h2 class="block grey">Resume</h2>
+                  </div>
+                  
+                 
         </div>
-        <nav class = "nav">
-            <div class = "overlay">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#work">Work Experience</a></li>
-                    <li><a href="#edu">Education</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class = "main-text">
-            <h1>Tim Kamoua</h1>
-            <h2>tkamoua@umich.edu</h2>
-            <a href="#aboutme" class = "btn main-btn">Explore</a>
-        </div>
-    </header>
-    <section class = "about-me" id="aboutme">
-        <div class = "container">
-           <div class="center add-padding-right">
-            <h2 class = "custom-font-secondary">About me</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel interdum dui. Pellentesque habitant 
-                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin placerat nunc justo, 
-                sed convallis libero sagittis et. Aliquam venenatis ex vel nunc blandit, eget cursus tellus feugiat. 
-                Nullam eget elit consectetur, lobortis eros ut, tincidunt elit. Aliquam ut elit quis risus sodales molestie. 
-                Donec in placerat magna. Donec arcu purus, gravida id feugiat dapibus, lacinia a ligula. Nam eu turpis in velit volutpat consequat. 
-                Fusce rhoncus massa et gravida congue. Nulla dictum lacus sit amet dolor pulvinar cursus. Ut ut libero hendrerit, tempor orci et, 
-                porttitor mi. Fusce massa nunc, efficitur in molestie ac, gravida a neque. Sed mattis nec elit nec dignissim.
-            </p>
-            <a href="#" class="btn btn-info">Learn More</a>
-        </div>
-            <div class = "store add-flex"></div>
-        </div>
-    </section>
+        <div class="col-md-9 text-center middle mobile-none clip">
+          <h3 class="align-middle"><span id="typed1"></span> </h3>
+          <h3><span id="typed2"></span> </h3>
+          <h3><span id="typed3"></span> </h3>
+          <script src = "node_modules\typed.js\lib\typed.js"></script>
+            <script>
+              var typed1 = new Typed('#typed1', {
+                strings: ["Hi, my name is Timothy Kamoua."],
+                typeSpeed: 30,
+                showCursor:false
+                });
+                var typed2 = new Typed('#typed2', {
+                strings: ["^2000 Welcome to my website!"],
+                typeSpeed: 30,
+                showCursor:false
+                });
+                var typed3 = new Typed('#typed3', {
+                strings: ["^4000 Explore the links in the bottom left corner."],
+                typeSpeed: 30,
+                showCursor:false
+                });
 
-    <section class="Front-end between-sec">
+               
+          </script>
+        </div>
+
+           
+        </div>
  
-            <h1 class = "custom-font">Frontend</h1>
-            <h2 class = "custom-font-secondary between-sec-color">Development</h2>
- 
-    </section>
+          
+      </div>
+    
 
-    <section class = "work-exp" id="work">
-        <div class = "container">
-            <div class="center">
-            <h2 class = "custom-font-secondary">Work Experience</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel interdum dui. Pellentesque habitant 
-                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin placerat nunc justo, 
-                sed convallis libero sagittis et. Aliquam venenatis ex vel nunc blandit, eget cursus tellus feugiat. 
-                Nullam eget elit consectetur, lobortis eros ut, tincidunt elit. Aliquam ut elit quis risus sodales molestie. 
-                Donec in placerat magna. Donec arcu purus, gravida id feugiat dapibus, lacinia a ligula. Nam eu turpis in velit volutpat consequat. 
-                Fusce rhoncus massa et gravida congue. Nulla dictum lacus sit amet dolor pulvinar cursus. Ut ut libero hendrerit, tempor orci et, 
-                porttitor mi. Fusce massa nunc, efficitur in molestie ac, gravida a neque. Sed mattis nec elit nec dignissim.
-            </p>
-            <a href="#" class="btn btn-info">Learn More</a>
-        </div>  
-        </div>
-    </section>
-
-    <section class="Back-end between-sec">
-      >
-            <h1 class = "custom-font">Backend</h1>
-            <h2 class = "custom-font-secondary between-sec-color">Development</h2>
-     
-    </section>
-
-    <section class = "education" id="edu">
-        <div class = "container">
-            <h1 class = "custom-font-secondary">Education</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel interdum dui. Pellentesque habitant 
-                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin placerat nunc justo, 
-                sed convallis libero sagittis et. Aliquam venenatis ex vel nunc blandit, eget cursus tellus feugiat. 
-                Nullam eget elit consectetur, lobortis eros ut, tincidunt elit. Aliquam ut elit quis risus sodales molestie. 
-                Donec in placerat magna. Donec arcu purus, gravida id feugiat dapibus, lacinia a ligula. Nam eu turpis in velit volutpat consequat. 
-                Fusce rhoncus massa et gravida congue. Nulla dictum lacus sit amet dolor pulvinar cursus. Ut ut libero hendrerit, tempor orci et, 
-                porttitor mi. Fusce massa nunc, efficitur in molestie ac, gravida a neque. Sed mattis nec elit nec dignissim.
-            </p>
-        </div>
-    </section>
-
-
-    <section class = "contact-me" id="contact">
-        <div class = "container">
-                <div class="center add-padding-right">
-            <h2 class = "custom-font-secondary">Contact Me</h2>
-        </div>
-        <div class="form-container add-flex">
-            <form action="">
-                <input type="text" class="input" placeholder="Full Name" name="name" required>
-                <input type="text" class="input" placeholder="Email" name="email" required>
-                <textarea name="message" class="text-area" cols="30" rows="10" required></textarea>
-                <input type="submit" class = "input btn btn-submit">
-                <p>631-885-1769</p>
-            </form>
-        </div>
-            
-        </div>
-    </section>
-<footer>
-    <div class="copyright">
-        <h4>Copyright Timothy Kamoua</h4>
-    </div>
-</footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts.js"></script>
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+  </body>
 </html>
