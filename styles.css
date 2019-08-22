@@ -588,6 +588,9 @@ a:link {
 text-decoration: none;
 
 }
+.blue-background{
+  background-color: #041E66;
+}
 a:hover{
 color:white;
 }
@@ -635,8 +638,8 @@ color: rgb(145, 144, 144);
   margin-left:0px;
 }
 .bottom{
-  top:40rem;
-  bottom:0;
+  top:10rem;
+
   position:relative;
 }
 h2{
