@@ -676,6 +676,9 @@ color: rgb(145, 144, 144);
 .mobile-center{
   text-align:center;
 }
+.middle2{
+  overflow:visible;
+}
 .row{
   margin-right:0px;
   margin-left:0px;
