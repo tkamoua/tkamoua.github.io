@@ -52,7 +52,7 @@
               <h3>Year: <span id="typed2"></span> </h3>
               <h3>Location: <span id="typed3"></span> </h3>
               <h3>Study: <span id="typed4"></span> </h3>
-              <h3  onclick ="loadDoc()" class="button blinking pointer" id="projectsButton"><a  id="continueButton"><span id="typed5"></span></an> </h3>
+              <h3  onclick ="loadDoc()" class="button blinking pointer" id="projectsButton"><a  id="continueButton"><span class = "mobile-none" id="typed5"></span><span class="desktop-none" id="typed6"></span></an> </h3>
 <script>
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
@@ -106,6 +106,11 @@ function loadDoc() {
                     });
                     var typed5 = new Typed('#typed5', {
                     strings: ["^4000 Press Enter for More Information"],
+                    typeSpeed: 0,
+                    showCursor:false
+                    });
+                    var typed6 = new Typed('#typed6', {
+                    strings: ["^4000 Click for More Information"],
                     typeSpeed: 0,
                     showCursor:false
                     });
