@@ -580,14 +580,13 @@ html {
   }
 }
 
-
 body{
 font-family:  'VCROSDMono';
 font-size: 62.5%;
 text-transform: uppercase;
 height:100%;
 background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-overflow:hidden;
+
 }
 
 .container{
@@ -597,7 +596,9 @@ a:link {
 text-decoration: none;
 
 }
-
+.wrapper{
+  max-height:100%;
+}
 
 a:hover{
 color:white;
