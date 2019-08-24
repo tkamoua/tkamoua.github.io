@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!--Index.html-->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,22 +29,53 @@
                         </a>
                     </div>
                       <div class="row bottom" >
+                        
                           <a  class="block grey"  href="mailto:tkamoua@umich.edu"> <h2 class="block blue-background "  >tkamoua@umich.edu</h2></a>
-                          <a class = "block grey" href="https://github.com/tkamoua" target="_blank"><h2 class="block blue-background" >GitHub</h2></a>
+                          <a class = "block grey" href="https://github.com/tkamoua" ><h2 class="block blue-background" >GitHub</h2></a>
                           <a class = "block grey" href="https://www.linkedin.com/in/timothy-kamoua-270b06182/" ><h2 class="block blue-background" >LinkedIn</h2></a>
-                          <a class = "block grey" href="projects.html" ><h2 class="block blue-background" >Projects</h2></a>
+                         <a class=" hover block grey mobile-none"><h2 onclick = "loadDoc()" class="hover pointer grey block blue-background">Projects</h2></a>
+                         <a class = "block grey desktop-none" href="projects.html" ><h2 class="block blue-background" >Projects</h2></a>
                           <h2 class="block grey blue-background" >Resume</h2>
                       </div>
                       
                      
             </div>
             <div class="col-md-3"></div>
-            <div class="col-md-6 text-left middle mobile-none clip">
+            <div id = "projects" class="col-md-6 text-left middle mobile-none clip">
+              
               <h3>Name: <span id="typed1"></span> </h3>
               <h3>Year: <span id="typed2"></span> </h3>
               <h3>Location: <span id="typed3"></span> </h3>
               <h3>Study: <span id="typed4"></span> </h3>
-  <h3 class="button blinking" id="projectsButton"><a href = "projects.html" id="continueButton"><span id="typed5"></span></an> </h3>
+              <h3  onclick ="loadDoc()" class="button blinking pointer" id="projectsButton"><a  id="continueButton"><span id="typed5"></span></an> </h3>
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("projects").innerHTML =
+      this.response;
+    }
+  };
+  xhttp.open("GET", "ajaxProjects.html", true);
+  xhttp.send();
+}
+</script>
+<script>
+    function sendAjax() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("projects").innerHTML =
+          this.response;
+        }
+      };
+      xhttp.open("GET", "projectsIndex.html", true);
+      xhttp.send();
+    }
+    </script>   
+              
+  
               
               <script src = "typed.js\lib\typed.min.js"></script>
                 <script>

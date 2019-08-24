@@ -1,7 +1,8 @@
 <!doctype html>
+
 <html lang="en">
+<!--ajaxProjects.html-->
   <head>
-    <!--Projects.html-->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,36 +16,20 @@
     </script>
     <title>Timothy Kamoua</title>
   </head>
-  <body>
-    <div class="full-page">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
+  <body id="projects">
         
-        <div class="container">
-        
-            <div class="row full-page ">
-              <div class="col-md-3  ">
-                    <div class="row ">
-                      <a class = "title_center" href = "index.html">
-                        <h1 class="display-1 block grey">Timothy</h1>
-                        <h1 class="display-1  grey block">Kamoua</h1><br>
-                    </a>
-                      
-                    </div>
-                      <div class="row bottom mobile-center mobile-none" >
-                          <a  class="block grey"  href="mailto:tkamoua@umich.edu"> <h2 class="block blue-background "  >tkamoua@umich.edu</h2></a>
-                          <a class = "block grey" href="https://github.com/tkamoua" target="_blank"><h2 class="block blue-background" >GitHub</h2></a>
-                          <a class = "block grey" href="https://www.linkedin.com/in/timothy-kamoua-270b06182/" ><h2 class="block blue-background" >LinkedIn</h2></a>
-                          <a class = "block grey" href="" ><h2 class="block blue-background" >Projects</h2></a>
-                          <h2 class="block grey blue-background" >Resume</h2>
-                      </div>
-                      
-                     
-            </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-6 projects text-left mobile-center middle2  clip">
-                <a class = "grey" href="index.html"><h3><-</h3></a><h3 class="centered">Projects</h2>
+                <style>
+                    #back{
+                        background-color:#1c1c1c;
+                        color:white;
+                        border:none;
+                        box-shadow:none;
+                    }
+                </style>
+                <a id = "back" type ="button" onclick ="sendAjax()" class = "grey" ><h3><-</h3></a><h3 class="centered">Projects</h2>
+                    
+                        
+                                      
              <p>
               <ul>
                 <li><em class="">University of Michigan Solar Car Team Software Developer: </em> Built, implemented, and updated
@@ -59,16 +44,6 @@
                 navigate a drone through a maze autonomously in a team environment. </li>
               </ul>
              </p>
-            
-            </div>
-    
-               
-            </div>
-     
-              
-          </div>
-    </div>
-     
     
 
     <!-- Optional JavaScript -->
