@@ -8,16 +8,17 @@ html {
   font-size: 62.5%;
   height: 100%;
   overflow:hidden;
-
+  position:relative;
   background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
 }
 
 body{
 font-family:  'VCROSDMono';
+position:relative;
 font-size: 62.5%;
 text-transform: uppercase;
 height:100%;
-overflow-y:auto;
+overflow-y:hidden;
 background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 /*background:radial-gradient(ellipse at bottom, #77b5fe 0%, rgb(147, 186, 231) 100%);   )*/
 
@@ -632,11 +633,17 @@ color: rgb(145, 144, 144);
 
 width: 100%;
 display:block;
-}
 
+}
+.left-padding{
+  padding-right:2rem;
+  padding-left:3rem;
+}
 .full-page{
 height:100%;
 width:100%;
+overflow-y:auto;
+
 }
 .bottom{
 position: absolute;
