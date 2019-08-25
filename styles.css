@@ -652,6 +652,9 @@ bottom:1rem;
  
 
 }
+.black{
+  color:black;
+}
 .middle2{
   border: 3px black solid;
   margin-top: auto;
@@ -672,6 +675,7 @@ p{
 .centered{
   text-align:center;
   font-size:3.5rem;
+  font-style:italic;
 }
 .clip{
 
