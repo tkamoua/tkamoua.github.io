@@ -8,7 +8,7 @@ html {
   font-size: 62.5%;
   height: 100%;
   overflow:hidden;
-  position:relative;
+
   background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
 }
 
@@ -17,7 +17,9 @@ font-family:  'VCROSDMono';
 font-size: 62.5%;
 text-transform: uppercase;
 height:100%;
+overflow-y:auto;
 background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+/*background:radial-gradient(ellipse at bottom, #77b5fe 0%, rgb(147, 186, 231) 100%);   )*/
 
 }
 
@@ -209,6 +211,7 @@ background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 #stars:after {
   content: '';
   position: absolute;
+  overflow:hidden;
   top: 2000px;
   width: 1px;
   height: 1px;
@@ -453,6 +456,7 @@ background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 #stars2:after {
   content: '';
   position: absolute;
+  overflow:hidden;
   top: 2000px;
   width: 2px;
   height: 2px;
@@ -546,6 +550,7 @@ background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 #stars3:after {
   content: '';
   position: absolute;
+  
   top: 2000px;
   width: 3px;
   height: 3px;
@@ -589,7 +594,9 @@ background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
 
-
+.small-title-font{
+  font-size:2rem;
+}
 .container{
 height:100%;
 }
@@ -599,6 +606,8 @@ text-decoration: none;
 }
 .wrapper{
   max-height:100%;
+  position:absolute;
+
 }
 
 a:hover{
@@ -654,6 +663,8 @@ bottom:1rem;
 }
 .centered2{
   margin-left: 10%;
+  text-align:center;
+
 }
 p{
   font-size: 2rem;
