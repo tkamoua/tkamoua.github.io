@@ -28,8 +28,8 @@
             <div role="main" class="row full-page ">
               <div class="left-padding row col-md-3 mobile-center ">
                     <div class="row ">
-                        <a  class="hover">
-                            <h1 onclick = "sendAjax()" class="pointer hover display-1 block grey">Timothy Kamoua</h1>
+                        <a aria-label = "Home"  href="index.html" class="hover">
+                            <h1  class="pointer hover display-1 block grey">Timothy Kamoua</h1>
                             
                         </a>
                     </div>
@@ -39,9 +39,9 @@
                           <a  class="block grey"  href="mailto:tkamoua@umich.edu"> <h2 class="block blue-background "  >tkamoua@umich.edu</h2></a>
                           <a class = "block grey" href="https://github.com/tkamoua" ><h2 class="block blue-background" >GitHub</h2></a>
                           <a class = "block grey" href="https://www.linkedin.com/in/timothy-kamoua-270b06182/" ><h2 class="block blue-background" >LinkedIn</h2></a>
-                         <a class=" hover block grey "><h2 onclick = "loadDoc()" class="hover pointer grey block blue-background">Projects</h2></a>
+                         <a class=" hover block grey " ><h2 onclick = "loadDoc()"tabindex="0" class="hover pointer grey block blue-background">Projects</h2></a>
                          <!--<a class = "block grey desktop-none" href="projects.html" ><h2 class="block blue-background" >Projects</h2></a>-->
-                          <h2 class="block grey blue-background" >Resume</h2>
+                          <h2 class="block grey blue-background" ><a class = "hover block grey"href="static\tkamoua_resume_pdf.pdf">Resume</a></h2>
                       </div>
                       
                      
@@ -53,7 +53,7 @@
               <h3>Year: <span id="typed2"aria-label= "Sophomore"></span> </h3>
               <h3>School: <span aria-label= "University of Michigan" id="typed3"></span> </h3>
               <h3>Major: <span id="typed4" aria-label= "Computer Science"></span> </h3>
-              <h3  onclick ="loadDoc()" class="button blinking pointer" id="projectsButton"><a  ><span class = "mobile-none" id="typed5" aria-label= "Press Enter for More Information"></span><span class="desktop-none" id="typed6"></span></an> </h3>
+              <h3  onclick ="loadDoc()" class="button blinking pointer" id="projectsButton"><a id="contBut" ><span class = "mobile-none" id="typed5" aria-label= "Press Enter for More Information"></span><span class="desktop-none" id="typed6"></span></an> </h3>
 <script>
 function loadDoc() {
   var xhttp = new XMLHttpRequest();

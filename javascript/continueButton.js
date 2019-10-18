@@ -1,4 +1,4 @@
-button = document.getElementById('continueButton');
+button = document.getElementById('contBut');
 
 document.addEventListener("keyup", function(event){
     if (event.keyCode ===13){
