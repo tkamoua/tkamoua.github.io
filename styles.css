@@ -596,8 +596,11 @@ background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 
 
 .small-title-font{
-  font-size:2rem;
+  font-size:2srem;
+  color:black;
+  background-color:white;
 }
+
 .container{
 height:100%;
 }
@@ -648,6 +651,7 @@ overflow-y:auto;
 .bottom{
 position: absolute;
 bottom:1rem;
+
 }
 .middle{
   border: 3px black solid;
@@ -700,6 +704,22 @@ color: rgb(145, 144, 144);
   .desktop-none{
     display:none;
   }
+  .display-1{
+    border: 3px black solid;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0rem 5rem 5rem .2rem;
+    background-color: #1c1c1c;
+    box-shadow: 0.5rem 0.5rem 0.2rem black;
+  }
+  .bottom{
+    border: 3px black solid;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0rem 5rem 5rem .2rem;
+  background-color: #1c1c1c;
+  box-shadow: 0.5rem 0.5rem 0.2rem black;
+  }
 }
 @keyframes blinker {
   50% {
@@ -724,9 +744,23 @@ color: rgb(145, 144, 144);
   color:black;
   background-color:white;
 }
+#projectsButton2 a{
+  color:black;
+  background-color:white;
+}
+#projectsButton2 a{
+  color:black;
+  background-color:white;
+}
 @media (max-width: 767px){
 .mobile-none{
   display:none;
+}
+.display-1{
+  background-color:rgba(0, 0, 0, .4) ;
+}
+.bottom{
+  background-color:rgba(0, 0, 0, .4) ;
 }
 .mobile-center{
   text-align:center;

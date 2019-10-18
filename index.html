@@ -25,7 +25,7 @@
         
         <div class="container">
         
-            <div class="row full-page ">
+            <div role="main" class="row full-page ">
               <div class="left-padding row col-md-3 mobile-center ">
                     <div class="row ">
                         <a  class="hover">
@@ -34,7 +34,7 @@
                         </a>
                     </div>
                     
-                      <div class="row bottom" >
+                      <div role = "navigation" class="row bottom" >
                         
                           <a  class="block grey"  href="mailto:tkamoua@umich.edu"> <h2 class="block blue-background "  >tkamoua@umich.edu</h2></a>
                           <a class = "block grey" href="https://github.com/tkamoua" ><h2 class="block blue-background" >GitHub</h2></a>
@@ -49,11 +49,11 @@
             <div class=" col-md-3 mobile-none"></div>
             <div id = "projects" class="  col-md-6 text-left middle  clip">
               
-              <h3>Name: <span id="typed1"></span> </h3>
-              <h3>Year: <span id="typed2"></span> </h3>
-              <h3>Location: <span id="typed3"></span> </h3>
-              <h3>Major: <span id="typed4"></span> </h3>
-              <h3  onclick ="loadDoc()" class="button blinking pointer" id="projectsButton"><a  id="continueButton"><span class = "mobile-none" id="typed5"></span><span class="desktop-none" id="typed6"></span></an> </h3>
+              <h3>Name: <span id="typed1" aria-label= "Timothy Kamoua"></span> </h3>
+              <h3>Year: <span id="typed2"aria-label= "Sophomore"></span> </h3>
+              <h3>School: <span aria-label= "University of Michigan" id="typed3"></span> </h3>
+              <h3>Major: <span id="typed4" aria-label= "Computer Science"></span> </h3>
+              <h3  onclick ="loadDoc()" class="button blinking pointer" id="projectsButton"><a  ><span class = "mobile-none" id="typed5" aria-label= "Press Enter for More Information"></span><span class="desktop-none" id="typed6"></span></an> </h3>
 <script>
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
