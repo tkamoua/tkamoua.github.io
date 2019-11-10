@@ -45,33 +45,29 @@ h1.deepshadow {
 a.skip-main {
   color: black;
   background-color:white;
-  left: auto;
-  top: auto;
+  left:-999px;
+  position:absolute;
+  top:auto;
+  font-size:3rem;
   width: 30%;
-  height: auto;
-  overflow:auto;
+  height:auto;
+  overflow:hidden;
+  z-index:-999;
   margin: 10px 35%;
   padding:5px;
   border-radius: 15px;
   border:4px solid yellow;
   text-align:center;
-  font-size:3rem;
-  z-index:999;
 }
 a.skip-main:focus, a.skip-main:active {
-  color: black;
-  background-color:white;
+  
   left: auto;
   top: auto;
-  width: 30%;
+  
   height: auto;
   overflow:auto;
-  margin: 10px 35%;
-  padding:5px;
-  border-radius: 15px;
-  border:4px solid yellow;
-  text-align:center;
-  font-size:3rem;
+  
+ 
   z-index:999;
 }
 .nav a.current {
