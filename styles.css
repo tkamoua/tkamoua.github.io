@@ -45,14 +45,14 @@ h1.deepshadow {
 a.skip-main {
   color: black;
   background-color:white;
-  left:-999px;
+  left:-999rem;
   position:absolute;
   top:auto;
   font-size:3rem;
   width: 30%;
   height:auto;
   overflow:hidden;
-  z-index:-999;
+  z-index:999;
   margin: 10px 35%;
   padding:5px;
   border-radius: 15px;
