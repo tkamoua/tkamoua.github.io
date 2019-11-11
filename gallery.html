@@ -20,7 +20,165 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel = "stylesheet" href="styles.css">
-
+	<style>
+			*{margin: 0; padding: 0;}
+		body{background-color: black;}
+		.container
+		{
+			width: 100%;
+			height: 100%;
+		   
+		}
+		.middle{
+		 padding: 5rem 5rem 5rem 5rem;
+		}
+		.trans
+		{
+			transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			-o-transition: all 1s ease;
+			-webkit-transition: all 1s ease;
+		}
+		.top
+		{
+			display: flex;
+			width: 100%;
+			height: 100%;
+			
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+		.top ul
+		{
+			list-style: none;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			box-sizing: border-box;
+		}
+		.top ul li
+		{
+			position: relative;
+			float: left;
+			width: 25%;
+			height: 25%;
+			overflow: hidden;
+		}
+		
+		.top ul li::before
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #000;
+			content: '';
+			color: white;
+			opacity: 0.4;
+			text-align: center;
+			box-sizing: border-box;
+			pointer-events: none;
+			transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			-webkit-transition: all 0.5s ease;
+		}
+		.top ul li:hover::before
+		{
+			opacity: 0;
+			background-color: rgba(0,0,0,0.90);
+		}
+		.top ul li img
+		{
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+		}
+		.lightbox
+		{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			top: 0;
+			left: 0;
+			background-color: rgba(0,0,0,0.75);
+			z-index: 999;
+			opacity: 0;
+			pointer-events: none;
+		}
+		.lightbox img
+		{
+			max-width: 90%;
+			max-height: 80%;
+			position: relative;
+			top: -100%;
+			/* Transition */
+			transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			-o-transition: all 1s ease;
+			-webkit-transition: all 1s ease;
+		}
+		.lightbox:target
+		{
+			outline: none;
+			top: 0;
+			opacity: 1;
+			pointer-events: auto;
+			transition: all 1.2s ease;
+			-moz-transition: all 1.2s ease;
+			-ms-transition: all 1.2s ease;
+			-o-transition: all 1.2s ease;
+			-webkit-transition: all 1.2s ease;
+		}
+		.lightbox:target img
+		{
+			top: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+		}
+		.parallax {
+						  /* The image used */
+						  background-image: url("static/umich.jpg");
+						
+						  /* Set a specific height */
+						  min-height: 500px; 
+						
+						  /* Create the parallax scrolling effect */
+						  background-attachment: fixed;
+						  background-position: center;
+						  background-repeat: no-repeat;
+						  background-size: cover;
+						}
+					
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: black;
+          color: white;
+          text-align: center;
+          
+        }
+        p{
+          margin:0;
+        }
+        .smalltext{
+          font-size:1.5rem;
+        }
+     
+        
+			</style>
 
 
     <title>Timothy Kamoua</title>
@@ -72,149 +230,9 @@
             <div class=" col-md-3 mobile-none"></div>
             <div id = "projects" class="  col-md-6 text-left middle  clip">
               
-				<style>
-					*{margin: 0; padding: 0;}
-				body{background-color: black;}
-				.container
-				{
-					width: 100%;
-					height: 100%;
-				   
-				}
-				.middle{
-				 padding: 5rem 5rem 5rem 5rem;
-				}
-				.trans
-				{
-					transition: all 1s ease;
-					-moz-transition: all 1s ease;
-					-ms-transition: all 1s ease;
-					-o-transition: all 1s ease;
-					-webkit-transition: all 1s ease;
-				}
-				.top
-				{
-					display: flex;
-					width: 100%;
-					height: 100%;
-					
-					margin-left: auto;
-					margin-right: auto;
-					
-				}
-				.top ul
-				{
-					list-style: none;
-					width: 100%;
-					height: 100%;
-					z-index: 1;
-					box-sizing: border-box;
-				}
-				.top ul li
-				{
-					position: relative;
-					float: left;
-					width: 25%;
-					height: 25%;
-					overflow: hidden;
-				}
 				
-				.top ul li::before
-				{
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					background-color: #000;
-					content: '';
-					color: white;
-					opacity: 0.4;
-					text-align: center;
-					box-sizing: border-box;
-					pointer-events: none;
-					transition: all 0.5s ease;
-					-moz-transition: all 0.5s ease;
-					-ms-transition: all 0.5s ease;
-					-o-transition: all 0.5s ease;
-					-webkit-transition: all 0.5s ease;
-				}
-				.top ul li:hover::before
-				{
-					opacity: 0;
-					background-color: rgba(0,0,0,0.90);
-				}
-				.top ul li img
-				{
-					width: 100%;
-					height: auto;
-					overflow: hidden;
-				}
-				.lightbox
-				{
-					position: fixed;
-					width: 100%;
-					height: 100%;
-					text-align: center;
-					top: 0;
-					left: 0;
-					background-color: rgba(0,0,0,0.75);
-					z-index: 999;
-					opacity: 0;
-					pointer-events: none;
-				}
-				.lightbox img
-				{
-					max-width: 90%;
-					max-height: 80%;
-					position: relative;
-					top: -100%;
-					/* Transition */
-					transition: all 1s ease;
-					-moz-transition: all 1s ease;
-					-ms-transition: all 1s ease;
-					-o-transition: all 1s ease;
-					-webkit-transition: all 1s ease;
-				}
-				.lightbox:target
-				{
-					outline: none;
-					top: 0;
-					opacity: 1;
-					pointer-events: auto;
-					transition: all 1.2s ease;
-					-moz-transition: all 1.2s ease;
-					-ms-transition: all 1.2s ease;
-					-o-transition: all 1.2s ease;
-					-webkit-transition: all 1.2s ease;
-				}
-				.lightbox:target img
-				{
-					top: 0;
-					top: 50%;
-					transform: translateY(-50%);
-					-moz-transform: translateY(-50%);
-					-ms-transform: translateY(-50%);
-					-o-transform: translateY(-50%);
-					-webkit-transform: translateY(-50%);
-				}
-					</style>
 				<div class="container">
-						<style>
-								.parallax {
-								  /* The image used */
-								  background-image: url("static/umich.jpg");
-								
-								  /* Set a specific height */
-								  min-height: 500px; 
-								
-								  /* Create the parallax scrolling effect */
-								  background-attachment: fixed;
-								  background-position: center;
-								  background-repeat: no-repeat;
-								  background-size: cover;
-								}
-								</style>
+					
 						<div class="parallax"></div>
 						<div style="height:2rem;background-color:black;font-size:36px"></div>
 						<div style="height:50rem;background-color:#1c1c1c;font-size:36px">
@@ -257,8 +275,8 @@
 					  
 					  <a class = "grey" href="https://github.com/tkamoua" >GitHub</a>
 					  <a class = " grey" href="https://www.linkedin.com/in/timothy-kamoua-270b06182/" >LinkedIn</a>
-					  <a class = " grey"href="static\tkamoua_resume_pdf.pdf">Resume</a></p>
-					  <p class="smalltext">&copy Timothy Kamoua 2019 </p>
+					  <a class = " grey" href="static/tkamoua_resume_pdf.pdf">Resume</a></p>
+					  <p class="smalltext">&copy; Timothy Kamoua 2019 </p>
 				  </div>
                
             </div>
@@ -267,32 +285,14 @@
           </div>
           
     </div>
-    <style>
-        .footer {
-          position: fixed;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          background-color: black;
-          color: white;
-          text-align: center;
-          
-        }
-        p{
-          margin:0;
-        }
-        .smalltext{
-          font-size:1.5rem;
-        }
-        </style>
-        
+   
         
         
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!--<script src="javascript/linkEffect.js"></script>-->
-    <script src = javascript\continueButton.js></script>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
