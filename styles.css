@@ -1344,6 +1344,7 @@ color: rgb(145, 144, 144);
   background-color:white;
 }
 @media (max-width: 767px){
+ 
 .mobile-none{
   display:none;
 }
