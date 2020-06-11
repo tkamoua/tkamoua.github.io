@@ -1,16 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151913132-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-151913132-1');
-</script>
-
     <!--Index.html-->
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -19,56 +9,39 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel = "stylesheet" href="styles.css">
-    <style>
-        
-      p{
-        margin:0;
-      }
-      .smalltext{
-        font-size:1.5rem;
-      }
-      </style>
-
-
+    
     <title>Timothy Kamoua</title>
   </head>
- 
+  <section class="wrapper">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+  </section>
   <body>
-      <section class="wrapper">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
-      </section>
-      <a class="skip-main" href="#projects" >Skip to main content</a>
+  
    
       
     <div class="full-page">
         
         <div class="container">
-            
-            
-      
-            <div role="main" class="row full-page ">
+        
+            <div class="row full-page ">
               <div class="left-padding row col-md-3 mobile-center ">
-                    <div class="row fixed ">
-                        <a aria-label = "Home"  href="index.html" class="hover">
-                            <h1   class="pointer hover display-1 block grey deepshadow">Timothy Kamoua</h1>
-
+                    <div class="row ">
+                        <a  class="hover">
+                            <h1 onclick = "sendAjax()" class="pointer hover display-1 block grey">Timothy Kamoua</h1>
+                            
                         </a>
                     </div>
                     
-                      <div role = "navigation" class="row bottom nav" >
-                          <a class=" hover block grey " id='theHome' href="index.html"><h2  class="hover pointer grey block blue-background">Home</h2></a>
-                        <a class=" hover block grey " href="about.html"><h2  class="hover pointer grey block blue-background">About</h2></a>
-                        <a class=" hover block grey " href="ajaxProjects.html"><h2  class="hover pointer grey block blue-background">Projects</h2></a>
+                      <div class="row bottom" >
                         
-                        <a class=" hover block grey " href="contact.html" ><h2  class="hover pointer grey block blue-background">Contact</h2></a>
-                         
-                        
-                         
+                          <a  class="block grey"  href="mailto:tkamoua@umich.edu"> <h2 class="block blue-background "  >tkamoua@umich.edu</h2></a>
+                          <a class = "block grey" href="https://github.com/tkamoua" ><h2 class="block blue-background" >GitHub</h2></a>
+                          <a class = "block grey" href="https://www.linkedin.com/in/timothy-kamoua-270b06182/" ><h2 class="block blue-background" >LinkedIn</h2></a>
+                         <a class=" hover block grey "><h2 onclick = "loadDoc()" class="hover pointer grey block blue-background">Projects</h2></a>
                          <!--<a class = "block grey desktop-none" href="projects.html" ><h2 class="block blue-background" >Projects</h2></a>-->
-                          
-                          
+                          <h2 class="block grey blue-background" >Resume</h2>
                       </div>
                       
                      
@@ -76,19 +49,41 @@
             <div class=" col-md-3 mobile-none"></div>
             <div id = "projects" class="  col-md-6 text-left middle  clip">
               
-              <h3 class="reduced-none">Name: <span id="typed1" aria-label= "Timothy Kamoua"></span> </h3>
-              <h3  class="reduced-none">Year: <span id="typed2" aria-label= "Sophomore"></span> </h3>
-              <h3 class="reduced-none">School: <span aria-label= "University of Michigan" id="typed3"></span> </h3>
-              <h3 class="reduced-none">Major: <span id="typed4" aria-label= "Computer Science"></span> </h3>
-              <h3 class="normal-none">Name: Timothy Kamoua</h3>
-              <h3 class="normal-none">Year: Sophomore</h3>
-              <h3 class="normal-none">School: University of Michigan</h3>
-              <h3 class="normal-none">Major: Computer Science</h3>
-
+              <h3>Name: <span id="typed1"></span> </h3>
+              <h3>Year: <span id="typed2"></span> </h3>
+              <h3>Location: <span id="typed3"></span> </h3>
+              <h3>Major: <span id="typed4"></span> </h3>
+              <h3  onclick ="loadDoc()" class="button blinking pointer" id="projectsButton"><a  id="continueButton"><span class = "mobile-none" id="typed5"></span><span class="desktop-none" id="typed6"></span></an> </h3>
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("projects").innerHTML =
+      this.response;
+    }
+  };
+  xhttp.open("GET", "ajaxProjects.html", true);
+  xhttp.send();
+}
+</script>
+<script>
+    function sendAjax() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("projects").innerHTML =
+          this.response;
+        }
+      };
+      xhttp.open("GET", "projectsIndex.html", true);
+      xhttp.send();
+    }
+    </script>   
               
   
               
-              <script src = "typed.js/lib/typed.min.js"></script>
+              <script src = "typed.js\lib\typed.min.js"></script>
                 <script>
                   var typed1 = new Typed('#typed1', {
                     strings: ["Timothy Kamoua"],
@@ -110,20 +105,21 @@
                     typeSpeed: 30,
                     showCursor:false
                     });
-                    
+                    var typed5 = new Typed('#typed5', {
+                    strings: ["^4000 Press Enter for More Information"],
+                    typeSpeed: 0,
+                    showCursor:false
+                    });
+                    var typed6 = new Typed('#typed6', {
+                    strings: ["^4000 Click for More Information"],
+                    typeSpeed: 0,
+                    showCursor:false
+                    });
     
                    
               </script>
             </div>
-            <div class="footer">
-                <p><a  class=" grey"  href="mailto:tkamoua@umich.edu"> tkamoua@umich.edu</a>
-                  
-                  <a class = "grey" href="https://github.com/tkamoua" >GitHub</a>
-                  <a class = " grey" href="https://www.linkedin.com/in/timothy-kamoua-270b06182/" >LinkedIn</a>
-                  <a class = " grey" href="static/tkamoua_resume_pdf.pdf">Resume</a></p>
-                  <p class="smalltext">&copy; Timothy Kamoua 2019 </p>
-              </div>
-              
+    
                
             </div>
      
@@ -131,30 +127,16 @@
           </div>
           
     </div>
-   
-        
-       
+     
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!--<script src="javascript/linkEffect.js"></script>-->
-
+    <script src = javascript\continueButton.js></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   
-<script>
-$(function(){
-  $('a').each(function() {
-    if ($(this).prop('href') == window.location.href) {
-      $(this).addClass('current');
-    }
-    else{
-      document.getElementById("theHome").classList.add("current");
-    }
     
-  });
-});
-</script>
   </body>
 </html>

@@ -1,7 +1,7 @@
-button = document.getElementById('contBut');
+button = document.getElementById('continueButton');
 
 document.addEventListener("keyup", function(event){
-    if (event.keyCode ===67){
+    if (event.keyCode ===13){
         
         button.click();
     }
