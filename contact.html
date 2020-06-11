@@ -1,0 +1,275 @@
+
+
+                   
+            
+            <!doctype html>
+            <html lang="en">
+              <head>
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151913132-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151913132-1');
+</script>
+
+                <!--Index.html-->
+                <!-- Required meta tags -->
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            
+                <!-- Bootstrap CSS -->
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                <link rel = "stylesheet" href="styles.css">
+                <style>
+                  
+                  img{
+                                    max-width:100%;
+                                    height:auto;
+                                    margin-top:2rem; 
+                                }
+                                .header {
+                color: #36A0FF;
+                font-size: 27px;
+                padding: 10px;
+            }
+    
+            .bigicon {
+                font-size: 35px;
+                color: #36A0FF;
+                padding-left:2%;
+            }
+            form div{
+                display:inline-block;
+                width: 100%;
+            }
+            button.btn{             /*Why couldn't I just use button?*/
+                display: block;
+                margin: 0 auto;
+                background-color:black;
+            }
+            .form-group{
+                text-align:center;
+            }
+            .textcenter{
+                text-align:center;
+            }
+            #projects{
+     text-align:center;
+      padding: 5rem 5rem 5rem 5rem;
+     
+     
+    
+    }
+    .flip-card {
+  background-color: transparent;
+  
+  height: 300px;
+
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  
+}
+.flip-card-front img, .flip-card-back img{
+    margin-top:0rem;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+.footer {
+                      position: fixed;
+                      left: 0;
+                      bottom: 0;
+                      width: 100%;
+                      background-color: black;
+                      color: white;
+                      text-align: center;
+                      
+                    }
+                    p{
+                      margin:0;
+                    }
+                    .smalltext{
+                      font-size:1.5rem;
+                    }
+                </style>
+                <title>Timothy Kamoua</title>
+              </head>
+              
+              <body>
+                  <section class="wrapper">
+                      <div id="stars"></div>
+                      <div id="stars2"></div>
+                      <div id="stars3"></div>
+                  </section>
+                <a class="skip-main" href="#projects" >Skip to main content</a>
+               
+                  
+                <div class="full-page">
+                    
+                    <div class="container">
+                        
+                        
+                      
+                        <div role="main" class="row full-page ">
+                          <div class="left-padding row col-md-3 mobile-center ">
+                                <div class="row fixed">
+                                    <a aria-label = "Home"  href="index.html" class="hover">
+                                            <h1   class="pointer hover display-1 block grey deepshadow">Timothy Kamoua</h1>
+                                        
+                                    </a>
+                                </div>
+                                
+                                  <div role = "navigation" class="row bottom nav" >
+                                        <a class=" hover block grey " href="index.html"><h2  class="hover pointer grey block blue-background">Home</h2></a>
+                                    <a class=" hover block grey " href="about.html"><h2  class="hover pointer grey block blue-background">About</h2></a>
+                                    <a class=" hover block grey " href="ajaxProjects.html"><h2  class="hover pointer grey block blue-background">Projects</h2></a>
+                             
+                                    <a class=" hover block grey " href="contact.html" ><h2  class="hover pointer grey block blue-background">Contact</h2></a>
+                                     
+                                    
+                                     
+                                     <!--<a class = "block grey desktop-none" href="projects.html" ><h2 class="block blue-background" >Projects</h2></a>-->
+                                      
+                                      
+                                  </div>
+                                  
+                                 
+                        </div>
+                        <div class=" col-md-3 mobile-none"></div>
+                        <div id = "projects" class="  col-md-6  middle  clip">
+                          
+                          
+                            <h1 class="textcenter">Contact me</h1>
+                            <form class="form-horizontal" action="https://formspree.io/mpzavaye" method="post">
+                                <fieldset>
+                                    <legend class="text-center header">Your Contact Information</legend>
+                            
+                                    <div class="form-group">
+                                        <span><i class="fa fa-user bigicon"></i></span>
+                                        <div>
+                                            <label style = "font-size:1.4rem;" for="fname">First Name:</label>
+                                            <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <span><i class="fa fa-user bigicon"></i></span>
+                                        <div>
+                                            <label style = "font-size:1.4rem;" for="lname">Last Name:</label>
+                                            <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="form-group">
+                                        <span><i class="fa fa-paper-plane bigicon"></i></span>
+                                        <div>
+                                            <label style = "font-size:1.4rem;" for="email">Email:</label>
+                                            <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                        </div>
+                                    </div>
+                            
+                                  
+                            
+                                    <div class="form-group">
+                                        <span><i class = "fas fa-pencil-alt bigicon"></i></span>
+                                        <div>
+                                            <label style = "font-size:1.4rem;" for="message">Message:</label>
+                                            <textarea class="form-control" id="message" name="message" placeholder="Enter your massage here."></textarea>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="form-group">
+                                        <div>
+                                            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>            
+                                
+                                   
+            
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                            <!-- Add font awesome icons -->
+                            <a href="https://www.facebook.com/bkamoua" aria-label = "facebook" target="_blank" style="font-size:2rem;" class="fa fa-facebook" ></a>
+                            <a href="https://twitter.com/TKamoua" target="_blank" aria-label = "twitter" style="font-size:2rem;" class="fa fa-twitter"></a>
+                            <a href="https://www.instagram.com/basel_160/" target="_blank" aria-label = "instagram" style="font-size:2rem;" class="fa fa-instagram"></a>
+                            <a href="https://www.twitch.tv/novumleague" target="_blank" aria-label = "twitch.tv" style="font-size:2rem;" class="fa fa-twitch"></a>
+              
+                          
+                        
+                            
+                        </div>
+                
+                        <div class="footer">
+                            <p><a  class=" grey"  href="mailto:tkamoua@umich.edu"> tkamoua@umich.edu</a>
+                              
+                              <a class = "grey" href="https://github.com/tkamoua" >GitHub</a>
+                              <a class = " grey" href="https://www.linkedin.com/in/timothy-kamoua-270b06182/" >LinkedIn</a>
+                              <a class = " grey" href="static/tkamoua_resume_pdf.pdf">Resume</a></p>
+                              <p class="smalltext">&copy; Timothy Kamoua 2019 </p>
+                          </div>
+                        </div>
+                 
+                       
+                      </div>
+                      
+                </div>
+        
+                    
+                   
+                    
+            
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <!--<script src="javascript/linkEffect.js"></script>-->
+                
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                
+            <script>
+            $(function(){
+              $('a').each(function() {
+                if ($(this).prop('href') == window.location.href) {
+                  $(this).addClass('current');
+                }
+              });
+            });
+            </script>
+              </body>
+            </html>
